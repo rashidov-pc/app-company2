@@ -98,7 +98,7 @@ public class WorkerService {
         Address savedAddress = addressRepository.save(address);
         worker.setAddress(savedAddress);
         workerRepository.save(worker);
-        return new ApiResponse("Edit department", true);
+        return new ApiResponse("Edit worker", true);
     }
 
     public ApiResponse deleteWorker(Integer id) {
